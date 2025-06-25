@@ -26,7 +26,7 @@ if uploaded_file is not None:
         class_names = ["Raw", "Ripe"]
         predicted_label = class_names[np.argmax(prediction)]
 
-        st.success(f"🍌 Prediction: **{predicted_label}**")
+        st.success(f"📊 Prediction: **{predicted_label}**")
     except Exception as e:
         st.error(f"⚠️ Error: {e}")
 else:
