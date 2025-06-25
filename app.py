@@ -15,7 +15,7 @@ if uploaded_file is not None:
         image = Image.open(uploaded_file)
         st.image(image, caption="Uploaded Image", use_column_width=True)
 
-        model = load_model("fruit_ripeness_model.h5")
+        model = load_model("fruit_modelnew.h5")
         img = image.resize((128, 128))
         img = img_to_array(img) / 255.0
         img = np.expand_dims(img, axis=0)
